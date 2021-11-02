@@ -1,0 +1,84 @@
+
+html {
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.flexbox-container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+    
+}
+.flexbox-item{
+    background-color:#dfdfdf;
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+}
+
+.flexbox-item-1{
+    min-height: 100px;
+}
+.flexbox-item-1:after{
+    content: "Flexbox-item-1";
+}
+.flexbox-item-2{
+    min-height: 200px;
+}
+.flexbox-item-2:after{
+    content: "Flexbox-item-2";
+}
+    
+.flexbox-item-3{
+    min-height: 300px;
+}
+.flexbox-item-3:after{
+    content: "Flexbox-item-3";
+}
+
+.axis {
+    position: absolute;
+}
+
+.cross-axis {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: blue;
+}
+
+.main-axis {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 100%;
+    background-color: red;
+}
+
+.axis::after {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
+}
+
+.main-axis::after {
+    position: absolute;
+    content: 'Main Axis';
+    color: red;
+}
+
+.cross-axis::after {
+    white-space: nowrap;
+    content: 'Cross Axis';
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: blue;
+}

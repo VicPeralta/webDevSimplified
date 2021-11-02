@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("fonts/Booter - Zero Zero.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Raleway";
+    color:grey;
+}
+html, body{
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+}
+.main-header{
+    padding-bottom: 60px;
+    padding-top: 20px;
+    background-image:url("images/beatles_fondo.jpg");
+    background-color: #0000000f;
+    background-size:auto;
+    background-blend-mode: multiply;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+.nav{
+    text-align: center;
+}
+
+.nav ul{
+    margin:0;
+    border-bottom: gray solid 1px;
+}
+
+.nav li{
+    list-style-type: none;
+    padding: 0 5%;
+    display:inline;
+}
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding: .5em;
+}
+.nav a:hover{
+    /* background-color:rgba(255,255,255,.3); */
+    background-color: #ffffff4e;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 0 1.5em;
+}
+/* .content-section{
+    margin: 1em; 
+} */
+
+.content-title{
+    font-family: "Metal Mania";
+    font-weight: normal;
+    font-size: 2.5em;
+    color:black;
+    text-align: center;
+}
+.image-about{
+    float: left;
+    margin: 10px;;
+    width:400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.footer-band{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color:white;
+    padding: .25em 0;
+}
+
+.footer-band ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-band li{
+    list-style-type: none;
+    padding: 1em;
+    display:inline;
+}
+.footer-band img{
+    width: 30px;
+    height: 30px;
+}
+.band-name{
+    text-align: center;
+    font-size: 4em;
+    margin:0;
+    font-family: "Booter - Zero Zero" ;
+    font-weight: normal;
+    color:white;
+}
+.band-name-large{
+    font-size: 6em;
+}
+.about-title{
+    font-family: "Booter - Zero Zero";
+    font-size: 4em;
+    color: black;
+    margin:1;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: center;
+    padding: .67em;
+    cursor:pointer;
+}
+.btn-header{
+    color:white;
+    border: none;
+    background-color: rgba(100,100,100,.3);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: "Metal Mania";
+}
+.btn-header:hover{
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+.btn-play{
+    border:transparent;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 40px
+}
+.btn-play:hover{
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+.tour-row{
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+.tour-item{
+    padding: .5em;
+    display: inline-block;
+}
+.tour-date{
+    font-weight: bold;
+    width: 11%;;
+}
+.tour-city{
+    width: 24%;
+}
+.tour-arena{
+    width:42%;
+}
+.tour-btn{
+    width: 12%;
+}
+
+.btn-primary{
+    color:white;
+    background-color: gray;
+    font-weight: bold;
+    border:none;
+    border-radius: .3em;;
+}
+.btn-primary:hover{
+    background-color: black;
+}
+
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item-data{
+    margin: 30px;
+}
+.item-name{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(100,100,100);
+    text-align: center;
+}
+.item-image{
+    width: 250px;
+    height: 250px;
+}
+.item-details{
+    display: flex;
+    align-items: center;
+}
+.item-price{
+    flex-grow: 1;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+    color:black;
+    border-bottom: 1px solid black;
+}
+.cart-row{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.cart-column{
+    margin-right: 20px;
+    margin-top: 10px;
+    border-bottom: black 1px solid;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.cart-column-item{
+    width:40%;
+}
+.cart-column-price{
+    width:30%;
+}
+.cart-column-quantity{
+    width:30%;
+    display: flex;
+}
+.image-cart {
+    width: 80px;
+    height: auto;
+}
+.item-cart-name{
+    color: gray;
+    font-size: 1.15em;
+}
+.item-cart-price{
+    color: gray;
+    font-size: 1.15em;
+}
+.cart-input-quantity{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: gainsboro 1px solid;
+    margin-right: 20px;
+}
+.cart-button-remove{
+    width: 100px;
+    height: 40px;
+    border:none;
+    border-radius: 15px;
+    background-color: tomato;
+    color:white;
+    font-weight: bold;
+}
+.cart-button-remove:hover{
+    background-color: cornflowerblue;
+}
+.cart-row-total{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+.cart-total-header{
+    font-size: 1.25em;
+    font-weight: bold;
+    color:black;
+    margin-right: 20px;
+}
+.cart-total-price{
+    font-size: 1.5em;
+    color:black;
+}
+.cart-purchase-button{
+    display: block;
+    margin:40px auto 80px auto;
+    font-size: 1.75em;
+}
+.cart-row:last-child{
+    border-bottom: black 1px solid;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}

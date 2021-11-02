@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: Roboto;
+}
+body{
+    margin:0px;
+}
+
+.header{
+    background-color: #F3F3F3;
+    display:flex;
+    align-items: baseline;
+    padding: 0.5rem;
+    gap:1rem;
+}
+
+.link{
+    background-color: none;
+    border:none;
+    text-decoration: none;
+    color:#777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown.active > .link,
+.link:hover{
+    color:black;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position:absolute;
+    background-color: white;
+    padding: .75rem;
+    opacity: 0;
+    pointer-events: none;
+    left: 0px;
+    top: calc(100% +.25rem);
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    transition: opacity 500ms ease-in-out, transform 350ms ease-in-out;
+}
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap:2rem;
+}
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+.dropdown-heading{
+    font-weight: bold;
+}
+
+.dropdown-links{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.dropdown-links a{
+    text-decoration: none;
+}
+.login-form input{
+    margin-bottom: .5rem;
+}

@@ -1,0 +1,30 @@
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-content{
+    margin: 10px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item-data{
+    padding: 10px;
+}
+.item-name{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+.item-details{
+    display: flex;
+    align-items: center;
+}
+.item-price{
+    flex-grow: 1;
+}

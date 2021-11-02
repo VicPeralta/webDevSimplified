@@ -1,0 +1,30 @@
+/* Select all elements  */
+*{
+    /*
+    All elements will have brown color
+    */
+    color:brown;
+}
+div h2{
+    /* All h2 child elements of div will have font underlined */
+    text-decoration: underline;
+}
+.main-div >h2{
+    /* Just h2 that are direct elements of main-div will have extra larg font */
+    font-size: 4em;
+}
+div ~ a{
+    /* Select elements that are siblings of the first element and come after the first element */
+    color:green;
+}
+div +a{
+    color:hotpink;
+}
+[box]{
+    /* Select elements that have a atribute box */
+    border: red 1px solid;
+}
+h1:first-child{
+    /* Select all h1 first child of any container */
+    color:royalblue;
+}

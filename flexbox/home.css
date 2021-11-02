@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f9e933;;
+    padding: 0;
+    margin: 0;
+}
+.amazeriffic{
+    font-weight: bold;
+    font-style: italic;
+    color: brown;
+}
+.amazeriffic-large{
+    font-size: 4em;
+}
+.main-header{
+    background-color: white;
+    height: 130px;
+    width: 80%;
+    display: flex;
+    align-content:center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.left-header{
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.right-header{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.right-header a{
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+a:last-child{
+    border:none;
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+}
+.header-container{
+    border-bottom: 1px #eee solid;
+    
+}
+.main-content{
+    background-color: white;
+    display:flex;
+    align-content:center;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+}
+.left-content{
+    width: 60%; 
+    height: 300px;
+    display:flexbox;
+}
+.left-content li{
+    list-style: none;
+}
+.right-content{
+    width: 40%;
+    height: 300px;
+    display:flex;
+}
+.image-content{
+    height: 350px;
+    width:auto;
+    padding: 20px;
+}
+.footer-container{
+    /* min-width: 950px; */
+    background-color: #f9e933;;
+}
+
+.main-footer{
+    height: 200px;
+    display: flex;
+    width: 80%;
+    align-items: baseline;
+    align-content:center;
+    margin:auto;
+}
+
+.left-footer{
+    display: flexbox;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+}
+.left-footer h4{
+    margin-bottom: 10px;
+}
+.left-footer p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.right-footer{
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+.right-footer h4{
+    margin-bottom: 10px;
+}
+.sitemap{
+    display: flex;
+}
+.sitemap ul{
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 70px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.sitemap li{
+    text-decoration: none;
+    font-weight: bold;
+    color:red;
+}
