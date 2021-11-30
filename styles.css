@@ -227,6 +227,10 @@ html, body{
     justify-content:space-between;
     
 }
+.cart-row-header{
+    display: flex;
+    justify-content:space-between;
+}
 .cart-column{
     margin-right: 20px;
     margin-top: 10px;
